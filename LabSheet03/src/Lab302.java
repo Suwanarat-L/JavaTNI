@@ -10,7 +10,7 @@ public class Lab302 {
         int gender = JOptionPane.showConfirmDialog(null,
                 "Are your biological gender is Male?" ,
                 "Gender",
-                JOptionPane.INFORMATION_MESSAGE);
+                JOptionPane.YES_NO_OPTION);
         if (gender == 0){
             JOptionPane.showMessageDialog(null,
                     "Hello, Mr." + name

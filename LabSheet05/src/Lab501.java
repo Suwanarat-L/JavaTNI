@@ -7,7 +7,7 @@ public class Lab501 {
         int yes_no = JOptionPane.showConfirmDialog(null, "Do you want to check your BMI?","Check BMI", JOptionPane.YES_NO_OPTION);
         if (yes_no == JOptionPane.YES_OPTION){
             double weight = Double.parseDouble(JOptionPane.showInputDialog(null, "Enter your weight (kg.):"));
-            int height = Integer.parseInt(JOptionPane.showInputDialog(null,"Enter your height (cm.):"));
+            double height = Integer.parseInt(JOptionPane.showInputDialog(null,"Enter your height (cm.):"));
             double bmi = cal_bmi(weight,height);
             String bmi_result = check_bmi(bmi);
             JOptionPane.showMessageDialog(null,"Your BMI = " + df.format(bmi) +
@@ -27,3 +27,4 @@ public class Lab501 {
         else return "Obese";
     }
 }
+

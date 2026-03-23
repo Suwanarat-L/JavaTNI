@@ -74,7 +74,6 @@ public class HomeworkPage {
 
             tableModel.addRow(new Object[]{subject.trim(), detail.trim(), deadline.trim(), "Not Started"}); //Addลงตาราง
 
-
         });
 
         //ไว้กดเปลี่ยนสถานะของการบ้าน

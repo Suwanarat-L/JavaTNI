@@ -36,7 +36,7 @@ public class MainPage {
     private JLabel timeLabel;
     private JFrame frame;
 
-    private final Subject[] todaySubjects; // เก็บข้อมูลวิชาแบบ Array!
+    private final Subject[] todaySubjects;
 
     public MainPage() throws FileNotFoundException {
         frame = new JFrame();
@@ -64,7 +64,7 @@ public class MainPage {
 
         //แสดงวิชาที่กำลังเรียน
         Timer timer2 = new Timer(1000, e -> {
-            String today = LocalDateTime.now().getDayOfWeek().toString(); //getDayOfWeek() ex. monday tuesday
+            String today = LocalDate.now().getDayOfWeek().toString(); //getDayOfWeek() ex. monday tuesday
             LocalTime timeNow = LocalTime.now();
             boolean isStudy = false;
 

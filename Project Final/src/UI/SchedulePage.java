@@ -134,7 +134,6 @@ public class SchedulePage {
                 }
 
             } catch (Exception ex) {
-                System.out.println("Error adding subject: " + ex.getMessage());
                 JOptionPane.showMessageDialog(null,
                         "An unexpected error occurred!",
                         "System Error",
@@ -214,7 +213,6 @@ public class SchedulePage {
                         Object existingValue = model.getValueAt(row, c);
                         String existingText = (existingValue != null) ? existingValue.toString() : "";
                         String newText = s.getCode() + " (" + s.getStartTime() + "-" + s.getEndTime() + ")";
-
                         if (!existingText.isEmpty() && !existingText.equals(newText)) {
                             model.setValueAt(existingText + " | " + newText, row, c);
                         } else {

@@ -82,12 +82,12 @@ public class SubjectManager extends BaseFileManager {
                 LocalTime existingStart = s.getStartTime();
                 LocalTime existingEnd = s.getEndTime();
                 //เวลาเริ่มใหม่ต้องมาก่อนเวลาจบเดิม เวลาจบใหม่ ้องมาหลังเวลาเริ่มเดิม
-                //.isBefore() .isAfter() จะไม่นับกรณีเวลาเท่ากันพอดี
+                //ถ้าเวลาชนกันให้returnวิชาที่วิชาชน
                 if (newStart.isBefore(existingEnd) && newEnd.isAfter(existingStart)) {
                     return s.getCode() + " (" + s.getStartTime() + "-" + s.getEndTime() + ")";
                 }
             }
         }
-        return null;
+        return "";
     }
 }

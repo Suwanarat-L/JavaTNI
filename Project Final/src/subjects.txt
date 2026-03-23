@@ -1,8 +1,0 @@
-INT-108,Monday,10:00,12:00
-ENL-122,Tuesday,08:30,11:00
-INT-108,tuesday,11:30,14:30
-JPN-102,tuesday,14:30,16:00
-MSC-201,wednesday,08:30,11:30
-HUM-128,thursday,08:30,11:30
-JPN-102,thursday,13:00,14:30
-ENL-122,thursday,14:30,16:00
